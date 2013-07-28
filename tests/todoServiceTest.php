@@ -32,4 +32,15 @@ class todoServiceTest extends PHPUnit_Framework_TestCase
     {
         $this->assertEquals(3, $this->todoService->count());
     }
+
+    /**
+     * @test
+     */
+    public function ToDoは配列に格納されて取得できる()
+    {
+        $todos = $this->todoService->getAll();
+        $this->assertTrue(is_array($todos));
+
+        return $todos;
+    }
 }

@@ -18,5 +18,11 @@ class todoService
     {
         return count($this->todos);
     }
+
+    public function getAll()
+    {
+        return array();
+
+    }
 }
 
